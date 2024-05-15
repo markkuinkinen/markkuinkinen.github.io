@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=640 height=360 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -57,11 +57,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/AlienForGit.loader.js";
+      var loaderUrl = buildUrl + "/AlienForGit360p.loader.js";
       var config = {
-        dataUrl: buildUrl + "/AlienForGit.data",
-        frameworkUrl: buildUrl + "/AlienForGit.framework.js",
-        codeUrl: buildUrl + "/AlienForGit.wasm",
+        dataUrl: buildUrl + "/AlienForGit360p.data",
+        frameworkUrl: buildUrl + "/AlienForGit360p.framework.js",
+        codeUrl: buildUrl + "/AlienForGit360p.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Import Games",
         productName: "Alien Catacombs",
@@ -94,8 +94,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.width = "640px";
+        canvas.style.height = "360px";
       }
 
       loadingBar.style.display = "block";
