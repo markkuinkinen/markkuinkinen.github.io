@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markku's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style2.css">
+    <script src="/js/main.js"></script> 
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 text-center mt-5">
+                <h1 id="name">UNITY PROJECTS</h1>
+                <h1><br></h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 col-md-4">
+                <div class="btn-group-vertical">
+                    <a href="index.html" class="button-49" role="button">About Me</a>
+                    <a href="unity.html" class="button-49" role="button">Unity</a>
+                    <a href="unreal.html" class="button-49" role="button">Unreal</a>
+                    <a href="unreal.html" class="button-49" role="button"> Other</a>
+                </div>
+            </div>
+            <div id="UNITY" class="col-6 col-md-4">
+                <div class="ChoiceBtn">
+                    <button onclick="showInfo()">Info</button>
+                    <button onclick="playVideo('game1')">Video</button>
+                    <button onclick="playGame('game1')">Play</button>
+                    <div id="gameDesc" class = "GameWindow">
+                        <img id="box" src="img/AlienCt.png"></img>
+                    </div>
+                    <div id="videotab" class = "GameWindowVideo">
+                        <img id="videobox" src="img/placeholderbox.png"></img>
+                        <h2 id="gamevTitle"></h2>
+                        <iframe id="GameVideo" width="560" height="315" src=""  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        
+                    </div>
+                    <div id="gametab" class = "GameWindowPlay">
+                        <img id="gamebox" src="img/placeholderbox.png"></img>
+                        <h2 id="gamepTitle"></h2>
+                        <iframe id="gameFrame" src="" style="border:0; width:960px; height:700px;" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+                        
+                    </div>
+               </div> 
+            </div>
+            <div class="col-6 col-md-4">
+                <div id = "gameTitleBtn" class="btn-group-vertical">
+                    <button class="button-35" onclick="updateGame('game1')">ALIEN CATACOMBS</button>
+                    <p></p>
+                    <button class ="button-35" onclick="updateGame('game2')">ORBIN TIME</button>
+                </div>
+            </div>
+          </div>
+           
+        </div>
+    </div>
+</body>
+</html>
+     
